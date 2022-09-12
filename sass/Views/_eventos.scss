@@ -1,0 +1,96 @@
+/*SECCION EVENTOS*/
+.eventosBackground{
+    background-image:url(https://images.unsplash.com/photo-1535587566541-97121a128dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) ;
+    background-size: 1400px;
+}
+.eventoPrincipal{
+    display: flex;
+    background-color: black;
+    .imagenEventoP{
+        img{
+            max-width: 700px;
+        }
+    }
+    .infoEventoP{
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding-bottom: 100px;
+        h1{
+            font-size: 60px;
+            font-family: $fuente-sec;
+            font-weight:bolder;
+        }
+        h2{
+            font-family: $fuente-sec;
+        }
+        a{
+            font-family: $fuente-main;
+        }
+    }
+
+}
+.eventosSeparador{
+    display: flex;
+    flex-direction: column;
+    span{
+        max-width: auto;
+        max-height: 30px;
+        background-color: $color-secundario;
+        overflow:visible;
+        img{
+            height: 100px;
+            width: 900px;
+            position: relative;
+            bottom: 70px;
+            left: 460px;
+
+        }
+    }
+}
+.todosLosEventos{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "caja1 caja2 caja3"
+    "caja4 caja5 caja6";
+    background-color: $color-secundario;
+}
+div{
+    .card-img-overlay{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: transparent;
+        transition: 1s;
+        margin: 1px;
+        overflow: hidden;
+        font-family: $fuente-sec;
+        max-height: 250px;
+        &:hover{
+            color: white;
+            background-color: rgba(128, 128, 128, 0.445);
+        }
+    }
+}
+.todosLosEventos .card{
+    max-height: 200px;
+    overflow: hidden;
+}
+a.btn.btn-primary{
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: 1s;
+    text-shadow: 2px 2px 2px black;
+    &:hover{
+        background-color: black;
+        border: 1px solid  $color-principal ;
+    }
+}   
+
+
+/*FIN DE EVENTOS*/

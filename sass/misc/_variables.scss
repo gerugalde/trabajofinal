@@ -1,0 +1,27 @@
+$color-principal: #FBF4A1;
+$color-secundario: #091825;
+$borde-reutilizado: 2px solid rgba(0, 0, 0, 0);
+$fuente-main:'Libre Bodoni';
+$fuente-sec:'Nunito';
+$gradiente-eventos :linear-gradient(to right, #000000, #0a0407, #0f080f, #120d17, #11121d, #0f1420, #0d1623, #091825, #091825, #091825, #091825, #091825);
+$estilos:(
+    centro: center,
+    nulo:none,
+    principal:#091825,
+    );
+@mixin flexco {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexro {
+    display: flex;
+    flex-direction: row;   
+}
+@mixin content-center {
+    align-content: center;
+    justify-content: center;
+}
+@mixin hw-auto {
+    height: auto;
+    width: auto;
+}
